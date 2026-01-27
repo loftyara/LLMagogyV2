@@ -1,0 +1,236 @@
+This page lists the built-in modules that ship with the Python 3.13 Standard Library.
+
+These modules are available without extra installation (some are platform-dependent).
+A
+Module  Description  Introduced
+abc Tools for defining Abstract Base Classes (interfaces for Python classes). 2.6
+aifc Read and write AIFF/AIFF-C audio files. 1.5.2
+argparse Parse command line arguments and create user-friendly CLIs. 2.7
+array Efficient arrays of basic numeric types (compact alternative to lists). 1.0
+ast Work with Python code as an Abstract Syntax Tree (analyze or transform code). 2.6
+asyncio Write concurrent code using the async/await syntax (event loop, tasks, IO). 3.4
+atexit Register functions to run automatically when the program exits. 2.0
+B
+Module  Description  Introduced
+base64 Encode and decode data using Base16, Base32, Base64, etc. 2.0
+bdb Debugger framework used by pdb (implements the core debugging logic). —
+binascii Convert between binary and ASCII (hex, base64 helpers at C speed). 2.0
+bisect Maintain sorted lists; insert and search with binary search. 2.0
+builtins Access Python’s built-in objects like len, range, and exceptions. 3.0
+bz2 Read and write bzip2-compressed files and streams. 2.3
+C
+Module  Description  Introduced
+calendar Work with dates as calendars; print text calendars and compute month info. 2.0
+cgi Helpers for Common Gateway Interface (legacy web server scripts). 2.0
+cgitb Pretty tracebacks for CGI scripts (HTML formatted error reports). —
+cmd Build simple line-oriented command interpreters (REPL-like shells). 2.0
+code Run an interactive interpreter or embed one in your program. 2.0
+codecs Text encodings and decoding/encoding helpers. 2.0
+codeop Compile Python code objects conditionally (used by code editors and shells). 2.0
+collections High-performance container datatypes like deque, Counter, namedtuple. 2.4
+colorsys Convert between color systems: RGB, YIQ, HLS, HSV. 2.0
+concurrent Concurrency framework (futures) for running callables asynchronously. 3.2
+configparser Read and write INI-style configuration files. 3.0
+contextlib Utilities for context managers and the with-statement. 2.5
+contextvars Context-local storage for async code (like thread-local, but for tasks). 3.7
+copy Shallow and deep copy operations for Python objects. 2.0
+copyreg Register custom pickling functions for complex objects. 3.0
+csv Read and write CSV files (comma-separated values) with ease. 2.3
+ctypes Call C libraries and work with C-compatible data types. 2.5
+curses Terminal handling for character-cell UIs (Unix-like systems only). 2.0
+D
+Module  Description  Introduced
+dataclasses Decorator and helpers for classes that store data (auto-generate init, repr, etc.). 3.7
+datetime Dates, times, time zones, and timedeltas made simple and precise. 2.3
+dbm Family of simple on-disk key/value databases (backed by platform libs). 2.0
+decimal Fixed-point and floating decimal arithmetic for money and exact math. 2.4
+difflib Compare sequences and create human-readable diffs. 2.1
+dis Disassemble Python bytecode for inspection and debugging. 2.0
+doctest Test examples embedded in docstrings (keeps docs and code in sync). 2.1
+E
+Module  Description  Introduced
+email Parse, build, and send email messages (headers, MIME, attachments). 2.2
+encodings Implementation of text encodings used by Python’s codec system. 2.0
+ensurepip Bootstraps pip into a Python installation. 3.4
+enum Define enumerations (named constants) with nice semantics. 3.4
+errno Standard error number constants from the OS. 2.0
+F
+Module  Description  Introduced
+faulthandler Dump Python tracebacks on a crash or on demand (helps debug hard faults). 3.3
+filecmp Compare files and directories to see what changed. 2.0
+fileinput Loop over lines from stdin or a list of files as a single stream. 2.0
+fnmatch Match filenames using shell-style wildcards. 2.0
+fractions Rational numbers (Fractions) for exact arithmetic. 2.6
+ftplib FTP client library for transferring files. 2.0
+functools Higher-order functions and utilities (lru_cache, partial, wraps, etc.). 2.5
+G
+Module  Description  Introduced
+gc Control the garbage collector and inspect tracked objects. 2.0
+getopt Parse command-line options (POSIX-style). 1.5.2
+getpass Prompt for a password without echoing it to the console. 2.0
+gettext Internationalization (i18n) support for translating messages. 2.3
+glob Find pathnames matching a pattern like *.py. 2.0
+graphlib Topological sorting utilities for dependency graphs. 3.9
+gzip Read and write gzip-compressed files and streams. 2.0
+H
+Module  Description  Introduced
+hashlib Secure hashes and message digests (SHA, MD5, BLAKE2, etc.). 2.5
+heapq Heap queue (priority queue) algorithms on plain lists. 2.3
+hmac Keyed-hash message authentication codes (HMAC). 2.2
+html HTML helpers (escape/unescape text). 3.2
+http HTTP modules package (client, server, cookies). 3.0
+I
+Module  Description  Introduced
+idlelib Support for the IDLE interactive Python environment. —
+imaplib IMAP4 client library for accessing email servers. 2.0
+imghdr Determine the type of an image file. 2.0
+imp Access the import internals (deprecated; use importlib). —
+importlib Programmatic interface to Python’s import mechanism. 3.1
+inspect Inspect live objects such as modules, classes, and functions. —
+io Input/Output streams and buffering (text and binary). 2.6
+J
+Module  Description  Introduced
+json Encode and decode JSON data (JavaScript Object Notation). 2.6
+K
+Module  Description  Introduced
+keyword Test for Python keywords; list all keywords. —
+L
+Module  Description  Introduced
+linecache Read text lines from files with random access. 2.0
+locale Internationalization (i18n) support for formatting numbers and dates. 2.0
+logging Flexible event logging system with various handlers. 2.3
+lzma Compression using the LZMA algorithm (xz format). 3.3
+M
+Module  Description  Introduced
+mailbox Work with various mailbox formats (mbox, Maildir, etc.). 2.3
+mailcap Read mailcap files (MIME handlers configuration). 2.0
+marshal Read and write Python values in a binary format (for .pyc internals). —
+math Fast math functions: trigonometry, logarithms, constants, etc. —
+mimetypes Guess a file’s type based on its filename or URL. 2.0
+mmap Memory-map files for efficient random access. 2.0
+modulefinder Find modules used by a script (dependency scanning). —
+msilib Create and read Microsoft Installer (.msi) files (Windows only). —
+msvcrt Access to Microsoft C runtime routines (Windows only). —
+multiprocessing Run code in parallel using processes (bypass the GIL). 2.6
+N
+Module  Description  Introduced
+netrc Parse .netrc files for machine login credentials. 2.0
+nntplib Client for NNTP (Usenet) news servers. 2.0
+numbers Abstract base classes for numeric types. 2.6
+nis Interface to Sun’s NIS (Yellow Pages) service (Unix platforms). —
+ntpath Windows path operations (used by os.path on Windows). 2.0
+O
+Module  Description  Introduced
+operator Functional interface to operators (add, mul, itemgetter, attrgetter). 1.5.2
+optparse Deprecated parser for command line options (use argparse). 2.3
+os Operating system interfaces: files, environment, processes. —
+P
+Module  Description  Introduced
+pathlib Object-oriented filesystem paths. 3.4
+pdb Interactive debugger for Python programs. 2.0
+pickle Serialize and deserialize Python objects (not secure against untrusted data). 2.0
+pickletools Tools for analyzing pickled data. 2.3
+pipes Pipe shell commands together (Unix). 2.0
+pkgutil Utilities for packages: walk packages, find loaders, etc. 2.3
+platform Access to underlying platform information. 2.3
+plistlib Read and write Apple .plist files. 2.6
+poplib POP3 email client. 2.0
+posix POSIX APIs (Unix-only, low-level). 2.0
+pprint Pretty-print Python data structures. 2.0
+profile Deterministic profiling of Python programs. 2.0
+pstats Work with profiling results produced by profile/cProfile. 2.0
+pty Pseudo-terminal utilities (Unix). 2.0
+pyclbr Read module to get class browser information without importing it. 2.0
+pydoc Generate and view Python documentation. 2.1
+py_compile Compile Python source files to bytecode. 2.0
+Q
+Module  Description  Introduced
+queue Thread-safe FIFO/LIFO/priority queues. 2.6
+quopri Encode/decode MIME quoted-printable data. 2.0
+R
+Module  Description  Introduced
+random Generate pseudo-random numbers for various distributions. 2.0
+re Regular expression operations for pattern matching in strings. 2.0
+reprlib Safe string representations for large or recursive structures. 3.0
+resource Control and query system resource limits (Unix). 2.0
+rlcompleter Tab-completion support for the interactive interpreter. 2.0
+runpy Run modules as scripts (like python -m). 2.5
+S
+Module  Description  Introduced
+sched Event scheduler for running functions at specific times. 2.0
+secrets Generate cryptographically strong random numbers and tokens. 3.6
+select Low-level I/O multiplexing (select, poll, epoll, kqueue). 2.0
+selectors High-level I/O multiplexing built on select module. 3.4
+shelve Simple persistent storage for Python objects (dict-like API). 2.0
+shlex Parse shell-like syntaxes into tokens. 2.0
+shutil High-level file operations: copy, move, archive, disk usage. 2.0
+signal Set handlers for asynchronous signals. 2.0
+site Site-specific configuration hook that runs at startup. 2.0
+smtplib Send emails using the SMTP protocol. 2.0
+socket Low-level networking interface. 2.0
+socketserver Framework for network servers (TCP/UDP). 3.0
+sqlite3 Built-in lightweight SQL database (SQLite). 2.5
+ssl TLS/SSL wrapper for secure network connections. 2.6
+stat Constants and helpers for interpreting os.stat() results. 2.0
+statistics Basic statistics (mean, median, stdev). 3.4
+string Common string constants and helpers. 2.0
+stringprep String preparation for internet protocols (IDNA). 2.3
+struct Convert between Python values and C structs packed as bytes. 2.0
+subprocess Spawn new processes and connect to their input/output/error pipes. 2.4
+sunau Read and write Sun AU audio files. 2.0
+symtable Access the compiler's internal symbol tables. 2.6
+sys Access to interpreter variables and functions. —
+sysconfig Access Python's configuration information. 3.2
+T
+Module  Description  Introduced
+tabnanny Detect ambiguous indentation in Python source files. 2.0
+tarfile Read and write tar archives, including gzip/bz2/xz. 2.3
+telnetlib Telnet client implementation. 2.0
+tempfile Create temporary files and directories safely. 2.0
+termios POSIX terminal control (Unix). 2.0
+test Regression tests package for the Python standard library. 2.0
+textwrap Wrap and fill text paragraphs. 2.3
+threading Higher-level threading interface (locks, events, threads). 2.0
+time Time access and conversions. —
+timeit Measure execution time of small code snippets. 2.3
+tkinter Standard GUI toolkit (Tk interface) package. 3.0
+token Token constants used by the Python tokenizer. 2.0
+tokenize Turn Python source into tokens (lexical scanner). 2.0
+tomllib Read TOML files into Python data structures. 3.11
+trace Trace program execution and produce coverage reports. 2.0
+traceback Print or retrieve stack traces. 2.0
+tracemalloc Track memory allocations to find leaks and hotspots. 3.4
+tty Terminal control functions (Unix). 2.0
+turtle Simple graphics library for teaching and fun. 2.5
+types Names for built-in types and helper factories. 2.0
+typing Type hints and typing helpers for static analysis and tooling. 3.5
+U
+Module  Description  Introduced
+unicodedata Access the Unicode Character Database (properties, normalization). 2.0
+unittest Unit testing framework (xUnit style) for Python. 2.1
+urllib Package for working with URLs (requests, parsing, robots). 2.0
+uuid Generate universally unique identifiers (UUIDs). 2.5
+V
+Module  Description  Introduced
+venv Create lightweight isolated Python environments. 3.3
+W
+Module  Description  Introduced
+warnings Issue and control warning messages. 2.0
+wave Read and write WAV audio files. 2.0
+weakref Weak references to objects (avoid reference cycles). 2.0
+webbrowser Open URLs in a web browser. 2.0
+wsgiref WSGI utilities and simple reference server for web apps. 2.3
+X
+Module  Description  Introduced
+xdrlib Pack and unpack XDR data (External Data Representation). 2.0
+xml XML processing package. 2.0
+xmlrpc XML-RPC client and server package. 2.2
+Z
+Module  Description  Introduced
+zipapp Create executable Python zip applications. 3.5
+zipfile Read and write ZIP archives. 2.0
+zipimport Import modules from ZIP archives. 2.3
+zlib Compress and decompress data using zlib. 2.0
+zoneinfo IANA time zone support for datetime. 3.9
+
+Note: This page lists Python 3.13 Standard Library modules. Some modules are platform-specific (Unix/Windows) or optional at build time.

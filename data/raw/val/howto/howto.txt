@@ -1,0 +1,215 @@
+How to Remove Duplicates From a Python List
+
+Learn how to remove duplicates from a List in Python.
+Example
+Get your own Python Server
+
+Remove any duplicates from a List:
+mylist = ["a", "b", "a", "c", "c"]
+mylist = list(dict.fromkeys(mylist))
+print(mylist)
+Example Explained
+
+First we have a List that contains duplicates:
+A List with Duplicates
+mylist = ["a", "b", "a", "c", "c"]
+mylist = list(dict.fromkeys(mylist))
+print(mylist)
+
+Create a dictionary, using the List items as keys. This will automatically remove any duplicates because dictionaries cannot have duplicate keys.
+Create a Dictionary
+mylist = ["a", "b", "a", "c", "c"]
+mylist = list( dict.fromkeys(mylist) )
+print(mylist)
+
+Then, convert the dictionary back into a list:
+Convert Into a List
+mylist = ["a", "b", "a", "c", "c"]
+mylist = list( dict.fromkeys(mylist) )
+print(mylist)
+
+Now we have a List without any duplicates, and it has the same order as the original List.
+
+Print the List to demonstrate the result
+Print the List
+mylist = ["a", "b", "a", "c", "c"]
+mylist = list(dict.fromkeys(mylist))
+print(mylist)
+
+Create a Function
+
+If you like to have a function where you can send your lists, and get them back without duplicates, you can create a function and insert the code from the example above.
+Example
+def my_function(x):
+  return list(dict.fromkeys(x))
+
+mylist = my_function(["a", "b", "a", "c", "c"])
+
+print(mylist)
+Example Explained
+
+Create a function that takes a List as an argument.
+Create a Function
+def my_function(x):
+  return list(dict.fromkeys(x))
+
+mylist = my_function(["a", "b", "a", "c", "c"])
+
+print(mylist)
+
+Create a dictionary, using this List items as keys.
+Create a Dictionary
+def my_function(x):
+  return list( dict.fromkeys(x) )
+
+mylist = my_function(["a", "b", "a", "c", "c"])
+
+print(mylist)
+
+Convert the dictionary into a list.
+Convert Into a List
+def my_function(x):
+  return list( dict.fromkeys(x) )
+
+mylist = my_function(["a", "b", "a", "c", "c"])
+
+print(mylist)
+
+Return the list
+Return List
+def my_function(x):
+  return list(dict.fromkeys(x))
+
+mylist = my_function(["a", "b", "a", "c", "c"])
+
+print(mylist)
+
+Call the function, with a list as a parameter:
+Call the Function
+def my_function(x):
+  return list(dict.fromkeys(x))
+
+mylist = my_function(["a", "b", "a", "c", "c"])
+
+print(mylist)
+
+Print the result:
+Print the Result
+def my_function(x):
+  return list(dict.fromkeys(x))
+
+mylist = my_function(["a", "b", "a", "c", "c"])
+
+print(mylist)
+
+How to Reverse a String in Python
+
+Learn how to reverse a String in Python.
+
+There is no built-in function to reverse a String in Python.
+
+The fastest (and easiest?) way is to use a slice that steps backwards, -1.
+Example
+Get your own Python Server
+
+Reverse the string "Hello World":
+txt = "Hello World"[::-1]
+print(txt)
+Example Explained
+
+We have a string, "Hello World", which we want to reverse:
+The String to Reverse
+txt = "Hello World" [::-1]
+print(txt)
+
+Create a slice that starts at the end of the string, and moves backwards.
+
+In this particular example, the slice statement [::-1] means start at the end of the string and end at position 0, move with the step -1, negative one, which means one step backwards.
+Slice the String
+txt = "Hello World" [::-1]
+print(txt)
+
+Now we have a string txt that reads "Hello World" backwards.
+
+Print the String to demonstrate the result
+Print the List
+txt = "Hello World"[::-1]
+print(txt)
+
+Create a Function
+
+If you like to have a function where you can send your strings, and return them backwards, you can create a function and insert the code from the example above.
+Example
+def my_function(x):
+  return x[::-1]
+
+mytxt = my_function("I wonder how this text looks like backwards")
+
+print(mytxt)
+Example Explained
+
+Create a function that takes a String as an argument.
+Create a Function
+def my_function(x):
+  return x[::-1]
+
+mytxt = my_function("I wonder how this text looks like backwards")
+
+print(mytxt)
+
+Slice the string starting at the end of the string and move backwards.
+Slice the String
+def my_function(x):
+  return x [::-1]
+
+mytxt = my_function("I wonder how this text looks like backwards")
+
+print(mytxt)
+
+Return the backward String
+Return the String
+def my_function(x):
+  return x[::-1]
+
+mytxt = my_function("I wonder how this text looks like backwards")
+
+print(mytxt )
+
+Call the function, with a string as a parameter:
+Call the Function
+def my_function(x):
+  return x[::-1]
+
+mytxt = my_function("I wonder how this text looks like backwards")
+
+print(mytxt)
+
+Print the result:
+Print the Result
+def my_function(x):
+  return x[::-1]
+
+mytxt = my_function("I wonder how this text looks like backwards")
+
+print(mytxt)
+
+How to Add Two Numbers in Python
+
+Learn how to add two numbers in Python.
+
+Use the + operator to add two numbers:
+Example
+Get your own Python Server
+x = 5
+y = 10
+print(x + y)
+Add Two Numbers with User Input
+
+In this example, the user must input two numbers. Then we print the sum by calculating (adding) the two numbers:
+Example
+x = input("Type a number: ")
+y = input("Type another number: ")
+
+sum = int(x) + int(y)
+
+print("The sum is: ", sum) 

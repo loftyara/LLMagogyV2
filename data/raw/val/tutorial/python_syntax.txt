@@ -1,0 +1,113 @@
+Python Syntax
+Execute Python Syntax
+
+As we learned in the previous page, Python syntax can be executed by writing directly in the Command Line:
+>>> print("Hello, World!")
+Hello, World!
+
+Or by creating a python file on the server, using the .py file extension, and running it in the Command Line:
+C:\Users\Your Name>python myfile.py
+Python Indentation
+
+Indentation refers to the spaces at the beginning of a code line.
+
+Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.
+
+Python uses indentation to indicate a block of code.
+Example
+
+if 5 > 2:
+  print("Five is greater than two!")
+
+Python will give you an error if you skip the indentation:
+Example
+
+Syntax Error:
+if 5 > 2:
+print("Five is greater than two!")
+
+The number of spaces is up to you as a programmer, the most common use is four, but it has to be at least one.
+Example
+if 5 > 2:
+ print("Five is greater than two!") 
+if 5 > 2:
+        print("Five is greater than two!") 
+
+You have to use the same number of spaces in the same block of code, otherwise Python will give you an error:
+Example
+
+Syntax Error:
+if 5 > 2:
+ print("Five is greater than two!")
+        print("Five is greater than two!")
+
+Python Variables
+
+In Python, variables are created when you assign a value to it:
+Example
+
+Variables in Python:
+x = 5
+y = "Hello, World!"
+
+Python has no command for declaring a variable.
+
+You will learn more about variables in the Python Variables chapter.
+Comments
+
+Python has commenting capability for the purpose of in-code documentation.
+
+Comments start with a #, and Python will render the rest of the line as a comment:
+Example
+
+Comments in Python:
+#This is a comment.
+print("Hello, World!")
+
+Python Statements
+Statements
+
+A computer program is a list of "instructions" to be "executed" by a computer.
+
+In a programming language, these programming instructions are called statements.
+
+The following statement prints the text "Python is fun!" to the screen:
+Example
+
+print("Python is fun!")
+
+In Python, a statement usually ends when the line ends. You do not need to use a semicolon (;) like in many other programming languages (for example, Java or C).
+Many Statements
+
+Most Python programs contain many statements.
+
+The statements are executed one by one, in the same order as they are written:
+Example
+print("Hello World!")
+print("Have a good day.")
+print("Learning Python is fun!")
+Example explained
+
+From the example above, we have three statements:
+
+    print("Hello World!")
+    print("Have a good day.")
+    print("Learning Python is fun!")
+
+The first statement is executed first (print "Hello World!").
+Then the second statement is executed (print "Have a good day.").
+And at last, the third statement is executed (print "Learning Python is fun!").
+Semicolons (Optional, Rarely Used)
+
+Semicolons are optional in Python. You can write multiple statements on one line by separating them with ; but this is rarely used because it makes it hard to read:
+Example
+print("Hello"); print("How are you?"); print("Bye bye!")
+
+However, if you put two statements on the same line without a separator (newline or ;), Python will give an error:
+Example
+print("Python is fun!") print("Really!")
+
+Result:
+SyntaxError: invalid syntax
+
+Best practice: Put each statement on its own line so your code is easy to understand.
