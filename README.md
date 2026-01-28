@@ -30,6 +30,7 @@ All code, datasets, and results are provided for full reproducibility.
    git clone https://github.com/loftyara/LLMagogyV2.git
    cd LLMagogyV2
 
+
 2. **Set up environment**
 ```
 python -m venv venv
@@ -38,13 +39,16 @@ venv\Scripts\activate  # Windows
 pip install -r requirements.txt
 pip install torch --index-url https://download.pytorch.org/whl/cu128
 
+
 3. **Prepare datasets**
 ```
 python scripts/prepare_datasets.py
 
-4. **Run an experiment (e.g., Step 5)**
+
+4. **Run an experiment (e.g., Step 5**
 ```
 python src/llmagogy_step5.py
+
 
 💡 See ['papers/LLMagogyV2.pdf'](papers/LLMagogyV2.pdf) for full methodology, results, and conclusions.
 

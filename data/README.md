@@ -1,7 +1,3 @@
-
----
-
-### 📄 **Каталог `data/`: `README.md`**
 ```markdown
 # Data Directory
 
