@@ -8,7 +8,7 @@ This repository contains the implementation and experimental results of **LLMago
 Unlike standard approaches that train a fixed-size model on massive chaotic corpora, LLMagogy trains a **small model first** and **gradually expands it** (depth and width) while training on a **structured, cumulative dataset**—inspired by human pedagogy.
 
 The core idea was **not confirmed**: staged training on *non-repetitive, cumulative subsets* does **not** outperform full-dataset training.  
-However, **progressive growth on the full dataset** consistently **reduces training time by 5–25%** without quality loss.
+However, **progressive growth on the full dataset** consistently **reduces training time by 5–25%** without quality loss or even with best quality.
 
 All code, datasets, and results are provided for full reproducibility.
 
@@ -30,25 +30,20 @@ All code, datasets, and results are provided for full reproducibility.
    git clone https://github.com/loftyara/LLMagogyV2.git
    cd LLMagogyV2
 
-
 2. **Set up environment**
-```
-python -m venv venv
-#source venv/bin/activate  # Linux/macOS
-venv\Scripts\activate  # Windows
-pip install -r requirements.txt
-pip install torch --index-url https://download.pytorch.org/whl/cu128
-
+   ```bash
+   python -m venv venv
+   # source venv/bin/activate  # Linux/macOS
+   venv\Scripts\activate  # Windows
+   pip install -r requirements.txt
+   pip install torch --index-url https://download.pytorch.org/whl/cu128
 
 3. **Prepare datasets**
-```
-python scripts/prepare_datasets.py
-
+   ```bash
+   python scripts/prepare_datasets.py
 
 4. **Run an experiment (e.g., Step 5**
-```
-python src/llmagogy_step5.py
+   ```bash
+   python src/llmagogy_step5.py
 
-
-💡 See ['papers/LLMagogyV2.pdf'](papers/LLMagogyV2.pdf) for full methodology, results, and conclusions.
-
+💡 See [`papers/LLMagogyV2.pdf`](papers/LLMagogyV2.pdf) for full methodology, results, and conclusions.
