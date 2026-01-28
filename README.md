@@ -4,6 +4,7 @@
 > *"Knowledge of a few principles frees one from knowledge of many facts."* — R. Descartes
 
 This repository contains the implementation and experimental results of **LLMagogyV2**, a research project exploring **progressive model growth** as an alternative to traditional end-to-end pre-training of language models.
+This is a continuation of the first version of the [LLMagogy](../LLMagogy) project.
 
 Unlike standard approaches that train a fixed-size model on massive chaotic corpora, LLMagogy trains a **small model first** and **gradually expands it** (depth and width) while training on a **structured, cumulative dataset**—inspired by human pedagogy.
 
@@ -42,7 +43,7 @@ All code, datasets, and results are provided for full reproducibility.
    ```bash
    python scripts/prepare_datasets.py
 
-4. **Run an experiment (e.g., Step 5**
+4. **Run an experiment (e.g., Step 5)**
    ```bash
    python src/llmagogy_step5.py
 
